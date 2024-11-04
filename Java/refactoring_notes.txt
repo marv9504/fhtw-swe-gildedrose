@@ -1,0 +1,26 @@
+Steps done
+
+- Requirements gelesen
+- Requirements an ChatGPT gegeben und nach einer Zusammenfassung gefragt
+- ChatGPT gefragt, was man alles Testen sollte
+- Tests für die bestehenden Funktionen geschrieben
+- ChatGPT die Tests verbessern und ergänzen lassen
+- item.names die im Code vorkamen durch Konstanten ersetzt
+- Schleife durch foreach ersetzt
+- Inneres der Schleife in Methode updateItemQuality(Item item) extrahiert
+- Replace all item[i] durch item
+- Qualitätsberechnungen in zwei statische Methoden ausgelagert
+- Item.name equals Berechnungen in statische Methoden ausgealgert und Statements geflippt
+- erste if Verschachtelungen aufgelöst und die Condidition ins überliegende if gezogen
+- item.quality - item.quality durch 0 ersetzt
+- ItemUpdater Interface erstellt, um die Logik für Items aufzuteilen
+- Factory Klasse erstellt, welche für die speziellen Item "spezialisierte" Instanzen erstellt
+- updateItemQuality begonnen aufzulösen und Logik in die speziellen Instanzen ausgelagert
+- zuerst den BackstagePass rausgelöst
+- dann den AgedBrie rausgelöst
+- dann das Sulfuras if in eine eigene Methode ausgelagert
+- Letztlich konnten dann die Anforderungen für einen Normales Item implementiert werden
+- Und die updateItemQuality entfernt werden
+- Refactoring der neuen Methoden: Erhöhung der Qualität nur bei < 50 in die increase Methode gezogen
+- Maximale Qualität in Konstante rausgezogen
+- im BackstagePassUpdater die if-else Aufgelöst ("One level of indenta-on per method")
